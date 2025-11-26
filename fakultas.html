@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakultas - Universitas Hasanuddin</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #800000, #b71c1c);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .fakultas-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px;
+      text-align: center;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: rgba(0,0,0,0.3);
+      font-size: 0.9rem;
+    }
+
+    .back {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      background: white;
+      color: #b71c1c;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      background: #e63946;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Unhas Logo.png" alt="Logo Unhas">
+    <h1>Universitas Hasanuddin</h1>
+    <a href="index.html" class="back">Beranda</a>
+  </header>
+
+  <main>
+    <h2>Fakultas di Universitas Hasanuddin</h2>
+
+    <div class="fakultas-container">
+      <div class="card">
+        <a href="fmipa.html">
+          <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\MIPA.jpg" alt="FMIPA">
+          <h3>Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA)</h3>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\teknik.jpg" alt="Fakultas Teknik">
+        <h3>Fakultas Teknik</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\hukum.jpg" alt="Fakultas Hukum">
+        <h3>Fakultas Hukum</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\kedokteran.jpg" alt="Fakultas Kedokteran">
+        <h3>Fakultas Kedokteran</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\pertanian.jpg" alt="Fakultas Pertanian">
+        <h3>Fakultas Pertanian</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\FIKP.jpg" alt="Fakultas Ilmu Kelautan dan Perikanan">
+        <h3>Fakultas Ilmu Kelautan dan Perikanan</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\KEHUTANAN.jpg" alt="Fakultas Kehutanan">
+        <h3>Fakultas Kehutanan</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Peternakan.jpg" alt="Fakultas Peternakan">
+        <h3>Fakultas Peternakan</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Kedoteran gigi.jpg" alt="Fakultas Kedokteran Gigi">
+        <h3>Fakultas Kedokteran Gigi</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\fkm.jpg" alt="Fakultas Kesehatan Masyarakat">
+        <h3>Fakultas Kesehatan Masyarakat</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Kedokteran hewan.jpg" alt="Fakultas Kedokteran Hewan">
+        <h3>Fakultas Kedokteran Hewan</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\FIB.jpg" alt="Fakultas Ilmu Budaya">
+        <h3>Fakultas Ilmu Budaya</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\FISIP.jpg" alt="Fakultas Ilmu Sosial dan Politik">
+        <h3>Fakultas Ilmu Sosial dan Politik</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\FEB.jpg" alt="Fakultas Ekonomi dan Bisnis">
+        <h3>Fakultas Ekonomi dan Bisnis</h3>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\vokasi.jpg" alt="Fakultas Vokasi">
+        <h3>Fakultas Vokasi</h3>
+      </div>
+
+       <div class="card">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Keperawatan.jpg" alt="Fakultas Keperawatan">
+        <h3>Fakultas Keperawatan</h3>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Universitas Hasanuddin. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FMIPA - Universitas Hasanuddin</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #b71c1c, #800000);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .back {
+      background: white;
+      color: #b71c1c;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      background: #e63946;
+      color: white;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .departemen-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 15px;
+      margin: 0;
+      text-align: center;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-title">
+      <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Unhas Logo.png" alt="Logo Unhas">
+      <h1>FMIPA - Universitas Hasanuddin</h1>
+    </div>
+    <a href="fakultas.html" class="back">Kembali</a>
+  </header>
+
+  <main>
+    <h2>Departemen di Fakultas MIPA</h2>
+
+    <div class="departemen-container">
+
+      <div class="card">
+        <a href="fisika.html">
+          <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Fisika.jpg" alt="Departemen Fisika">
+          <h3>Departemen Fisika</h3>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="matematika.html">
+          <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\matematika.jpg" alt="Departemen Matematika">
+          <h3>Departemen Matematika</h3>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="biologi.html">
+          <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Biologi.jpg" alt="Departemen Biologi">
+          <h3>Departemen Biologi</h3>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="kimia.html">
+          <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\kimia.jpg" alt="Departemen Kimia">
+          <h3>Departemen Kimia</h3>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="statistika.html">
+          <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\statistika.jpg" alt="Departemen Statistika">
+          <h3>Departemen Statistika</h3>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="Geofisika.html">
+          <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Geo.jpg" alt="Departemen Geofisika">
+          <h3>Departemen Geofisika</h3>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 FMIPA - Universitas Hasanuddin.
+  </footer>
+
+</body>
+</html>

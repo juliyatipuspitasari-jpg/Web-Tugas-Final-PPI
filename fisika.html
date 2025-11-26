@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departemen Fisika - FMIPA Unhas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #800000, #b71c1c);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .header-title h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .back {
+      background: white;
+      color: #b71c1c;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      background: #e63946;
+      color: white;
+    }
+
+    main {
+      padding: 40px;
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 20px;
+      border-left: 5px solid white;
+      padding-left: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .lab-container {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      text-align: center;
+      padding: 15px;
+      font-size: 1.2rem;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0,0,0,0.4);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">
+    <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Kaderisasi MI\Pictures\Unhas Logo.png" alt="Logo Unhas">
+    <h1>Departemen Fisika - FMIPA Unhas</h1>
+  </div>
+  <a href="fmipa.html" class="back">Kembali</a>
+</header>
+
+<main>
+
+  <h2>Profil Departemen Fisika</h2>
+  <p>
+    Departemen Fisika FMIPA Universitas Hasanuddin merupakan salah satu departemen 
+    yang berkomitmen dalam pengembangan pendidikan, penelitian, dan pengabdian masyarakat 
+    di bidang fisika dan aplikasinya. Dengan didukung oleh tenaga pengajar yang kompeten 
+    serta fasilitas laboratorium yang lengkap, Departemen Fisika menjadi pusat pembelajaran 
+    yang unggul dan inovatif.
+  </p>
+
+  <h2>Visi</h2>
+  <p>
+    Menjadi program studi yang andal dalam pengkajian fisika dan aplikasinya pada tingkat internasional pada tahun 2030.
+
+  <h2>Misi</h2>
+  <p>1. Melaksanakan pendidikan tinggi fisika yang efisien dan berkualitas.</p>
+  <p>2. Melaksanakan kegiatan penelitian dan pengembangan ilmu fisika dan aplikasinya.</p>
+  <p>3. Melaksanakan proses hilirisasi dan memanfaatkan hasil-hasil kajian ilmu fisika dan aplikasinya untuk kesejahteraan masyarakat dan pembangunan nasional.</p>
+
+  <h2>Laboratorium di Departemen Fisika</h2>
+
+  <div class="lab-container">
+
+    <div class="card">
+      <a href="lab_teori.html">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Desktop\Buku dan Materi Kuliah\MK SEMESTER 5\Teori lab.jpeg" alt="Lab Teori & Komputasi">
+        <h3>Lab Teori & Komputasi</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="lab_elektronika.html">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Desktop\Buku dan Materi Kuliah\MK SEMESTER 5\ELINS.jpeg" alt="Lab Elektronika & Instrumentasi">
+        <h3>Lab Elektronika & Instrumentasi</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="lab_energi.html">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Desktop\Buku dan Materi Kuliah\MK SEMESTER 5\lab material.jpeg" alt="Lab Fisika Energi & Material">
+        <h3>Lab Fisika Energi & Material</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="lab_optik.html">
+        <img src="c:\Users\JULIYATI PUSPITA\OneDrive\Desktop\Buku dan Materi Kuliah\MK SEMESTER 5\Lab-Optik.jpg" alt="Lab Optik & Spektroskopi">
+        <h3>Lab Optik & Spektroskopi</h3>
+      </a>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 Departemen Fisika FMIPA Unhas.
+</footer>
+
+</body>
+</html>

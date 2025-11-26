@@ -1,0 +1,198 @@
+/* Font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* NAVBAR TRANSPARAN */
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgba(255, 0, 0, 0.2);   /* merah transparan */
+  backdrop-filter: blur(5px);
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #ffdddd;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background:url("mnt/data/a5dfcbc1-f831-42ff-9336-68b628a52a90.png") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay gelap otomatis */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+/* Text di tengah */
+.hero-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.hero-text h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* Tombol */
+.btn-explore {
+  background: #b30000;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-explore:hover {
+  background: #ff0000;
+  transform: scale(1.05);
+}
+
+/* Animasi fade-in */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #990000;
+  color: white;
+}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Universitas Hasanuddin</title>
+
+  <link rel="stylesheet" href="Unhas.css">
+
+  <!-- Google Font untuk tampilan elegan -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="images/unhas-logo.png" alt="Logo UNHAS">
+      <h1>Universitas Hasanuddin</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="profil.html" class="active">Profil</a>
+      <a href="fakultas.html">Fakultas</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="profil-hero">
+    <div class="overlay"></div>
+    <h2>Profil Universitas Hasanuddin</h2>
+  </section>
+
+  <!-- VISI MISI -->
+  <section class="content">
+    <h2>Visi & Misi</h2>
+
+    <div class="card">
+      <h3>Visi</h3>
+      <p>
+        Pusat unggulan dalam pengembangan insani, ilmu pengetahuan, teknologi, seni, dan budaya berbasis Benua Maritim Indonesia.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Misi</h3>
+      <ul>
+        <li>Menyediakan lingkungan belajar berkualitas untuk mengembangkan pembelajar yang inovatif dan proaktif.</li>
+        <li>Melestarikan, mengembangkan, menemukan, dan menciptakan ilmu pengetahuan, teknologi, seni, dan budaya.</li>
+        <li>Menerapkan dan menyebarluaskan ilmu pengetahuan, teknologi, seni, dan budaya bagi kemaslahatan Benua Maritim Indonesia.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SEJARAH -->
+  <section class="content">
+    <h2>Sejarah Singkat</h2>
+
+    <div class="card">
+      <p>
+        Universitas Hasanuddin (UNHAS) didirikan pada tahun 1956 sebagai salah satu perguruan tinggi negeri terbesar
+        di Indonesia Timur. Dengan kampus utama di Tamalanrea, Makassar, UNHAS terus berkembang menjadi pusat pendidikan,
+        penelitian, dan pengabdian kepada masyarakat yang unggul dengan semangat keilmuan yang kuat serta kontribusi nyata
+        bagi bangsa.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Universitas Hasanuddin. Semua Hak Dilindungi.
+  </footer>
+
+</body>
+</html>
