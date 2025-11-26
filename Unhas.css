@@ -47,7 +47,7 @@ body {
 /* HERO SECTION */
 .hero {
   height: 100vh;
-  background:url("mnt/data/a5dfcbc1-f831-42ff-9336-68b628a52a90.png") center/cover no-repeat;
+  background:url("image/Gedung-Rektorat\ UH.webp") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -137,7 +137,7 @@ footer {
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="nav-left">
-      <img src="images/unhas-logo.png" alt="Logo UNHAS">
+      <img src="image/Logo unhas.jpg" alt="Logo UNHAS">
       <h1>Universitas Hasanuddin</h1>
     </div>
 
